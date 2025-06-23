@@ -1,3 +1,5 @@
+# Les Flow d'authentifications
+
 Les Principaux Concept (Client, Ressource Owner, Ressource Server, Authentification Server)
 
 ![concept](https://github.com/user-attachments/assets/dd786909-6102-40c6-825b-a858ac9613f2)
@@ -15,9 +17,9 @@ Ce mode est bien sur à proscrire dans nos PN puisqu'il adresse en clair le clie
 Ce mode d'authentification est le mode nominal a utiliser pour authentifier nos écrans.
 Il s'appui sur un mécanisme en 2 étapes: 
 
-Une première requête est initié avec le client id permettant de récupérer un code d'autorisation.
-Ce code d'autorisation est déposé sur une url connue de l'Autorisation Server et disponible dans l'application Client
-Une deuxième requête est alors effectue avec le Code d'autorisation pour finaliser la création du Jeton d'autorisation
+* Une première requête est initié avec le client id permettant de récupérer un code d'autorisation.
+* Ce code d'autorisation est déposé sur une url connue de l'Autorisation Server et disponible dans l'application Client
+* Une deuxième requête est alors effectue avec le Code d'autorisation pour finaliser la création du Jeton d'autorisation
 
 ![acf](https://github.com/user-attachments/assets/ba0d7153-4c0d-4cde-b9b0-9ff60dd3be09)
 
