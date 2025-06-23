@@ -7,7 +7,7 @@ Les Principaux Concept (Client, Ressource Owner, Ressource Server, Authentificat
 
 ## Flow Client Credentials 
 Dans ce mode le client id et le client secret sont directement fournit dans la requête afin d'obtenir un Jeton d'authentification.
-Ce flow est souvent utilisé dans le mode machine to machine.
+Ce flow doit être utilisé dans le mode machine to machine.
 Ce mode est bien sur à proscrire dans nos PN puisqu'il adresse en clair le client id et client secret.
 
 ![client-credential](https://github.com/user-attachments/assets/c5886228-ca9e-4000-a545-b59fe2ef72bb)
@@ -27,3 +27,6 @@ Il s'appui sur un mécanisme en 2 étapes:
 ## Proteger le Client Secret
 
 ![clientsecret](https://github.com/user-attachments/assets/8704798f-b2fa-4d68-bae6-e6d1f2300761)
+
+Afin de protéger votre client secret, il est nécessaire de dédier une ressource vous permmettant de le cacher de vos consomateurs.<br>
+La solution est de mettre en place une ressource sur l'un des serveurs permettant de cacher le client secret et d'appeller par rebond le serveur d'authentification.<br>
